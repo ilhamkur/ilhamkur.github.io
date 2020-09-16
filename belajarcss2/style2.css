@@ -1,0 +1,40 @@
+ header {
+     background-color: green;
+     padding: 30px;
+     text-align: center;
+     color: white;
+ }
+ article {
+     float : right;
+     padding : 15px;
+     width : 75%;
+     background-color : black;
+     color: cornsilk;
+     height: 250px;
+    }
+    section:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+ nav {
+        float: left;
+        width: 20%;
+        height: 250px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+      }
+      li {
+          border-block-color: blue;
+      }
+ 
+ @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+ .love {
+     font-weight: bold;
+     color: pink;
+ }
