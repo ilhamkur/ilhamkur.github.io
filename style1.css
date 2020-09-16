@@ -1,0 +1,29 @@
+h2 { 
+    background-color:green ;
+    text-align: center;
+}
+body {
+    color: lightblue;
+    background-color:black ;
+
+}
+ol {
+    color: red;
+}
+ul {
+    color: yellow;
+}
+p {font-weight: bold}
+.hurufbeda {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:orange;
+}
+.hurufaneh {
+    background-color:purple;
+}
+.huruf {
+    background-color:blue;
+}
+.hurufan {
+    background-color:goldenrod
+}
