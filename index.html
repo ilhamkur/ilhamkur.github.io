@@ -1,60 +1,607 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>tugas css</title>
-        <link rel="stylesheet" href="style1.css">
-    </head>
-    <body>
-       <h2>penerapan link css pada html</h2>
-        <p>berikut caranya</p>
-        <ol class="hurufaneh">
-            <li>Cara intenal</li>
-            <li>Cara external</li>
-            <li>Cara inline</li>
-        </ol>
-        <h2>penerapan link css pada html</h2>
-        <p>berikut caranya</p>
-        <ul class="huruf">
-            <li>Cara intenal</li>
-            <li>Cara external</li>
-            <li>Cara inline</li>
-        </ul>
-        <h2>penerapan link css pada html</h2>
-        <p>berikut caranya</p>
-        <ol class="hurufbeda">
-            <li>Cara intenal</li>
-            <li>Cara external</li>
-            <li>Cara inline</li>
-        </ol>
-        <h2>penerapan link css pada html</h2>
-        <p>berikut caranya</p>
-        <ul class="huruf">
-            <li>Cara intenal</li>
-            <li>Cara external</li>
-            <li>Cara inline</li>
-        </ul>
-        <h2>penerapan link css pada html</h2>
-        <p>berikut caranya</p>
-        <ol class="hurufan">
-            <li>Cara intenal</li>
-            <li>Cara external</li>
-            <li>Cara inline</li>
-        </ol>
-        <h2>penerapan link css pada html</h2>
-        <p>berikut caranya</p>
-        <ol class="hurufaneh">
-            <li>Cara intenal</li>
-            <li>Cara external</li>
-            <li>Cara inline</li>
-        </ol>
-        <h2>penerapan link css pada html</h2>
-        <p>berikut caranya</p>
-        <ul class="hurufbeda">
-            <li>Cara intenal</li>
-            <li>Cara external</li>
-            <li>Cara inline</li>
-        </ul>
+<html lang="en">
+<head>
+	<title>portofolio ilham</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<script src="https://kit.fontawesome.com/yourcode.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+
+	<link rel="stylesheet" href="css/style.css">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+
+	<style>
+		.site-hero{
+			background-attachment: fixed;
+		}
+	</style>
+</head>
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+
+
+	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	<section class="site-hero" style="background-image: url(../rezume/images/mrx.jpg);" id="section-home" data-stellar-background-ratio="0.5" >
+		<div class="container">
+			<div class="row intro-text align-items-center justify-content-center">
+				<div class="col-md-10 text-center pt-5">
+
+					<h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">Ilham Kurniawan</strong></h1>
+					<strong class="d-block text-white text-uppercase letter-spacing">and this is My Portofolio</strong>
+
+				</div>
+			</div>
+		</div>
+	</section> <!-- section -->
+
+
+
+
+
+
+	<section class="site-section" id="section-portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="section-heading text-center col-md-12">
+					<h2>Featured <strong>Portfolio</strong></h2>
+				</div>
+			</div>
+			<div class="filters">
+				<ul>
+					<li class="active" data-filter="*">All</li>
+					<li data-filter=".packaging">Packaging</li>
+					<li data-filter=".mockup">Mockup</li>
+					<li data-filter=".typography">Typography</li>
+					<li data-filter=".photography">Photography</li>
+				</ul>
+			</div>
+
+			<div class="filters-content">
+				<div class="row grid">
+					<div class="single-portfolio col-sm-4 all mockup">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p1.jpg" alt="">
+							</div>
+							<a href="images/p1.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<h4>Square Box Mockup</h4>
+							<div class="cat">Mockup</div>
+						</div>                                         
+					</div>
+					<div class="single-portfolio col-sm-4 all mockup">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p2.jpg" alt="">
+							</div>
+							<a href="images/p2.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<h4>Product Box Package Mockup</h4>
+							<div class="cat">Mockup</div>
+						</div>                                         
+					</div>                            
+					<div class="single-portfolio col-sm-4 all packaging">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p3.jpg" alt="">
+							</div>
+							<a href="images/p3.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a> 
+
+						</div>
+						<div class="p-inner">
+							<h4>Creative Package Design</h4>
+							<div class="cat">Packaging</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all packaging">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p4.jpg" alt="">
+							</div>
+							<a href="images/p4.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div> 
+						<div class="p-inner">
+							<h4>Packaging Brand</h4>
+							<div class="cat">Packaging</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all typography">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p5.jpg" alt="">
+							</div>
+							<a href="images/p5.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div>
+						<div class="p-inner">
+							<h4>Isometric 3D Extrusion</h4>
+							<div class="cat">Typography</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all photography">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p6.jpg" alt="">
+							</div>
+							<a href="images/p6.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div>
+						<div class="p-inner">
+							<h4>White Space Photography</h4>
+							<div class="cat">photography</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- .section -->
+
+	
+	<section class="site-section " id="section-resume">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>My <strong>Resume</strong></h2>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2 class="mb-5">Pendidikan</h2>
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
+						<h3>Masteral in Information Technology</h3>
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+						<span class="school">New York University</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> March 2013 - Present Deacember.</span>
+						<h3>Masteral in Information Technology</h3>
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+						<span class="school">New York University</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
+						<h3>Masteral in Information Technology</h3>
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+						<span class="school">New York University</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> March 2013 - Present Deacember.</span>
+						<h3>Masteral in Information Technology</h3>
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+						<span class="school">New York University</span>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+
+
+					<h2 class="mb-5">Pengalaman</h2>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
+						<h3>Lead Product Designer</h3>
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+						<span class="school">Github</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
+						<h3>Lead Product Designer</h3>
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+						<span class="school">Facebook</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
+						<h3>Lead Product Designer</h3>
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+						<span class="school">Twitter</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
+						<h3>Lead Product Designer</h3>
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+						<span class="school">Shopify</span>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section> <!-- .section -->
+
+	<section class="site-section" id="section-about">
+		<div class="container">
+			<div class="row mb-5 align-items-center">
+				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+					<img src="../rezume/images/ilham.jpg" alt="Image placeholder" class="img-fluid">
+				</div>
+				<div class="col-lg-5 pl-lg-5">
+					<div class="section-heading">
+						<h2>About <strong>Me</strong></h2>
+					</div>
+					<p class="lead">Saya mulai bergabung di Dunia IT (Teknologi Informasi) pada tahun 2020, Saya bekerja sebagai Web Developer dan sebagai Freelancr.</p>
+					<p class="mb-5  ">Seperti kata pepatah "pisau akan tumpul jika tidak pernah diasah" sebab itu saya selalu mengikuti perkembangan dalam bidang IT. Dan selalu mempelajari hal-hal yang baru untuk meningkatkan kemampuan saya dalam bidang Progamming.</p>
+					<p class="mb-5  ">Saya selalu menjalankan pekerjaan saya dengan penuh tanggung jawab, Sebab saya memiliki Motto "Jangan pernah meremehkan suatu pekerjaan walau sekecil apapun".</p>
+
+					<p>
+						<a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Contact Me</a>
+						<a href="#" class="btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
+					</p>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<section class="site-section">
+		<div class="container" >
+			<div class="row mb-5">
+				<div class="col-md-12">
+					<div class="section-heading text-center">
+						<h2>Client <strong>Testimonial</strong></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo; The Best untuk Mr.Ilham Kurniawan. Terimakasih sekarang tampilan web bisnis online saya jadi sangat menarik dan ramai pengunjung. &rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Yanto, CEO <a href="https://www.instagram.com/il_ham_kur/?hl=id">IlhamkurGroup</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote"> <p>&rdquo; Semua Pekerjaan yang saya berikan kepada Mr.Ilham Kurniawan benar-benar memuaskan. Semua kode terlihat dan tampilanya pun sangat menarik. Semangat berkarya Mr.Ilham kurniawan...&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Sukir, CEO <a href="https://www.instagram.com/il_ham_kur/?hl=id">IlhamkurGroup</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/person_3.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo; Semoga semakin maju dan semoga sukses, pekerjaanya rapi dan bagus.&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Jayadi, CEO <a href="https://www.instagram.com/il_ham_kur/?hl=id">IlhamkurGroup</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/person_4.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo;Mugo-mugo tambah sukses mas, Good Job, Well Done...GGWP...mainya hebat&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Stepen, CEO <a href="https://www.instagram.com/il_ham_kur/?hl=id">IlhamkurGroup</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="site-section pb-0"  id="section-services">
+		<div class="container">
+
+			<div class="row mb-4">
+				<div class="col-md-12">
+					<div class="section-heading text-center">
+						<h2>My <strong>Services</strong></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-presentation"><i class="fa fa-user-circle" aria-hidden="true"></i>
+
+						</span>
+						</span>
+						<h3 class="mb-4">Web Design</h3>
+						<p>Bekerja sebagai Frontend Web Developer</p>
+						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-presentation"><i class="fa fa-laptop" aria-hidden="true"></i>
+							</span>
+						</span>
+						<h3 class="mb-4">Writing Blog</h3>
+						<p> Menerima Jasa penulisan suatu blog dan penulisan artikel lain.</p>
+						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-video2"><i class="fa fa-info-circle" aria-hidden="true"></i>
+							</span>
+						</span>
+						<h3 class="mb-4">Logo Making</h3>
+						<p>Menerima pesanan pembuatan logo dan editing foto</p>
+						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+
+				
+
+			</div>
+		</div>
+	</section>
+
+
+	
+
+	<section class="site-section" id="section-blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>Blog on <strong>Medium</strong></h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 col-lg-4 mb-4">
+					<div class="blog-entry">
+						<a href="#"><img src="images/post_1.jpg" alt="Image placeholder" class="img-fluid"></a>
+						<div class="blog-entry-text">
+							<h3><a href="#">Creative Product Designer From Facebook</a></h3>
+							<p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+							<div class="meta">
+								<a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+								<a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4 mb-4">
+					<div class="blog-entry">
+						<a href="#"><img src="images/post_2.jpg" alt="Image placeholder" class="img-fluid"></a>
+						<div class="blog-entry-text">
+							<h3><a href="#">Creative Product Designer From Facebook</a></h3>
+							<p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+							<div class="meta">
+								<a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+								<a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4 mb-4">
+					<div class="blog-entry">
+						<a href="#"><img src="images/post_3.jpg" alt="Image placeholder" class="img-fluid"></a>
+						<div class="blog-entry-text">
+							<h3><a href="#">Creative Product Designer From Facebook</a></h3>
+							<p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+							<div class="meta">
+								<a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+								<a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="site-section" id="section-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2><strong>Komentar & Saran</strong></h2>
+					</div>
+				</div>
+
+				<div class="col-md-7 mb-5 mb-md-0">
+					<form action="" class="site-form">
+						<h3 class="mb-5">Komentar & Saran</h3>
+						<div class="form-group">
+							<input type="text" class="form-control px-3 py-4" placeholder="Nama">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control px-3 py-4" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control px-3 py-4" placeholder="Nomor Telepon">
+						</div>
+						<div class="form-group mb-5">
+							<textarea class="form-control px-3 py-4"cols="30" rows="10" placeholder="Tulis Pesan"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-primary  px-4 py-3" value="Kirim Pesan">
+						</div>
+					</form>
+				</div>
+				<div class="col-md-5 pl-md-5">
+					<h3 class="mb-5">Hubungi Saya:</h3>
+					<ul class="site-contact-details">
+						<li>
+							<span class="text-uppercase">Email</span>
+							kurniawanilham2002@gmail.com
+						</li>
+						<li>
+							<span class="text-uppercase">Number Phone</span>
+							+62877 2120 9608
+						</li>
+						<li>
+							<span class="text-uppercase">WA/Telegram</span>
+							+62877 2120 9608
+						</li>
+						<li>
+							<span class="text-uppercase">Address</span>
+							Tanjung, Kedungtuban <br>
+							Blora, Jawa Tengah  <br>
+							Jl. Cepu - Randublatung 
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="site-footer">
+		<div class="container">
+
+			<div class="row mb-5">
+				<p class="col-12 text-center">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true" ></i> by <a href="https://www.instagram.com/il_ham_kur/?hl=id" target="_blank" class="text-primary">Ilhamkur</a>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</p>
+			</div>
+			
+			<div class="row mb-5">
+				<div class="col-md-12 text-center">
+					<p>
+						
+					
+
+			
+
+						<a href="https://twitter.com/Ilhamkur14/with_replies" class="social-item" target="_blank"><span class="icon-twitter">
+							<i class='fab fa-twitter' style='font-size:48px;'></i>
+						</span></a>
+						<a href="https://www.instagram.com/ilhamkur__/?hl=id/" class="social-item" target="_blank"><span class="icon-instagram2">
+							<i class='fab fa-instagram' style='font-size:48px;color'></i>
+						</span></a>
+						<a href="https://www.facebook.com/profile.php?id=100024996105516" class="social-item" target="_blank"><span class="icon-facebook">
+							<i class='fab fa-facebook' style='font-size:48px;'></i>
+						</a>
+
+						
+
+
+					</p>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+
+
+
+
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+
+	<script src="js/vendor/jquery.easing.1.3.js"></script>
+
+	<script src="js/vendor/jquery.stellar.min.js"></script>
+	<script src="js/vendor/jquery.waypoints.min.js"></script>
+
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="js/custom.js"></script>
+
+	<!-- Google Map -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    	<script src="js/google-map.js"></script> -->
 
     </body>
-</html>
+    </html>
