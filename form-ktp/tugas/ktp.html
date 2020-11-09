@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form KTP</title>
+    <!-- css -->
+    <style>
+        body {
+            background-color: deepskyblue !important;
+            }
+
+        .all {
+            width: 1250px;
+            margin: auto;
+            margin-top: 20px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .tabel{
+            width: 1200px;
+            display: flex;
+            align-self: center ;
+            
+        }
+        th{
+            width: 150px;
+            text-align: center !important;
+        }
+        img{
+            width: 400px;
+        }
+        .data{
+            border:0 !important;
+            
+        }
+        .jrk{
+            height: 35px;
+        }
+      
+    </style> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="all">
+        <table class="all-tab tab1" >
+            <tr>
+                <th>
+                    <img src="../form-ktp/logo.png" alt="" srcset="">
+                </th>
+                <th>
+                    <h1>Form Registrasi KTP</h1>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="formulir">
+                        <h1>Formulir Isi Data KTP</h1>
+                        <!-- formulir -->
+                        <form>
+                            <div class="form-group">
+                                <label for="nik">NIK :</label>
+                                <input type="number" class="form-control" id="nik" >
+                            </div>
+                
+                            <div class="form-group">
+                            <label for="nama">Nama Lengkap :</label>
+                            <input type="text" class="form-control" id="nama" >
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="alamat">Alamat :</label>
+                                <input type="text" class="form-control" id="alamat" >
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="tanggalLahir">Tanggal Lahir :</label>
+                                <input type="date" class="form-control" id="tanggalLahir" >
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="usia">Usia :</label>
+                                <input type="text" class="form-control" id="usia" >
+                            </div>
+                
+                            <fieldset class="form-group">
+                                <div class="row">
+                                <legend class="col-form-label col-sm-3 pt-0">Jenis Kelamin </legend>
+                                <div class="col-sm-10">
+                                    <input id="radLaki" type="radio" size="24" name="gender" value="LakiLaki" onclick="isiJK(this.value)"> <label>Laki Laki</label> 
+                            <input id="radPerempuan" type="radio" size="24" value="Perempuan"  onclick="isiJK(this.value)" name="gender"> <label>Perempuan</label>
+                                 
+                                </div>
+                            </fieldset>
+                
+                            <select class="custom-select" id="agama">
+                                <option selected>Agama :</option>
+                                <option value="1">Islam</option>
+                                <option value="2">Katolik</option>
+                                <option value="3">Protestan</option>
+                                <option value="1">Hindu</option>
+                                <option value="2">Budha</option>
+                                
+                            </select>
+                
+                            <button class="btn btn-primary mt-5" type="submit" onclick="simpan()">Simpan</button>
+                
+                        </form>
+                        </div>
+
+                </td>
+                <td style="vertical-align: text-top;">
+                    <!-- output data -->
+                   <div class="data ">
+                       <h1>Data KTP</h1>
+                       <table id="tabel" class="tab2"border="1">
+                       <tr>
+                           <th>NIK</th>
+                           <th>Nama</th>
+                           <th>Alamat</th>
+                           <th>Usia</th>
+                           <th>Jenis Kelamin</th>
+                           <th>agama</th>
+                                       
+                       </tr>
+                       <tr>
+                           <td class="jrk" ><p id="nik1"></p></td>
+                           <td class="jrk"><p id="nama1"></p></td>
+                           <td class="jrk"><p id="alamat1"></p></td>
+                           <td class="jrk"><p id="usia1"></p></td>
+                           <td class="jrk"><p id="jenisKelamin1"></p></td>
+                           <td class="jrk"><p id="agama1"></p></td>
+                       </tr>
+                       </table>
+                   </div>
+                   </td>
+            </tr>
+                
+                  
+                
+        </table>
+        </div>
+        
+       
+
+           
+    <!-- javascript -->
+    <script>
+        function simpan(){
+            // var tabel = document.getElementById('tabel').style;
+            // var isi = tabel + "tr" 
+
+    // input nik
+    var x = document.getElementById("nik").value;
+    document.getElementById("nik1").innerHTML = x;
+    
+
+    // input nama
+    var y = document.getElementById("nama").value;
+    document.getElementById("nama1").innerHTML = y;
+
+    // input alamat
+    var z=document.getElementById("alamat").value;
+    document.getElementById("alamat1").innerHTML=z;
+
+    // input agama
+    var agama = document.getElementById('agama').selected(value);
+    if (agama == 1) {
+        document.getElementById("agama1").innerHTML='Islam';
+    }
+    if (agama == 2) {
+        document.getElementById("agama1").innerHTML='Katolik';
+    }
+    if (agama == 3) {
+        document.getElementById("agama1").innerHTML='Protestan';
+    }
+    if (agama == 4) {
+        document.getElementById("agama1").innerHTML='Hindu';
+    }
+    if (agama == 5) {
+        document.getElementById("agama1").innerHTML='Budha';
+    }
+
+    // input jenis kelamin
+    var jk = document.getElementById('').value;
+    if (jk == 1) {
+         document.getElementById("jenisKelamin1").innerHTML= 'laki laki';
+         document.getElementById("jenisKelamin1").style;
+
+    }
+    if (jk == 2) {
+        document.getElementById("jenisKelamin1").innerHTML= 'perempuan';
+        document.getElementById("jenisKelamin1").style;
+     }
+
+    // input usia
+     var tgl = document.getElementById('tanggalLahir').value;
+
+
+
+ 
+}
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

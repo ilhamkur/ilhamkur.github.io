@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisi</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        .width{
+            width: 1200px;
+            
+        }
+        th, td{
+            text-align: left;
+        }
+        .pos{
+            margin: auto;
+            width: 600px;
+        }
+        th{
+            vertical-align: baseline;
+            padding: 5px;
+        }
+        .border{
+            border: 1px solid black;
+        }
+        .bton
+        {
+            background-color: darkblue;
+            color: white;
+            font-weight: bold;
+            width: 600px;
+            height: 30px;
+            margin-top: 30px;
+        }
+    </style>
+    <script>
+        var JK ="";
+        function isiJK(x){
+            jk = x ;
+        }
+        function simpan(){
+
+            var isiNik = document.getElementById('nik').value;
+            var isiNama = document.getElementById('nama').value;
+            var isiAlamat = document.getElementById('alamat').value;
+            var isiTglLahir = getAge(document.getElementById('tanggalLahir').value);
+            var isiJK = jk;
+
+            var dpAgama = document.getElementById('cmbAgama');
+
+            var isiAgama = dpAgama.options[dpAgama.selectedIndex].text;
+
+            var tabel = document.getElementById('tabel');
+            var row = tabel.insertRow(-1);
+            var cNik = row.insertCell(0);
+            var cNama = row.insertCell(1);
+            var cAlamat = row.insertCell(2);
+            var cUsia = row.insertCell(3);
+            var cJK = row.insertCell(4);
+            var cAgama = row.insertCell(5);
+
+
+            cNik.innerHTML = isiNik;
+            cNama.innerHTML = isiNama;
+            cAlamat.innerHTML = isiAlamat;
+            cUsia.innerHTML = isiTglLahir;
+            
+            cAgama.innerHTML = isiAgama;
+            cJK.innerHTML = isiJK;
+
+
+            cJK.style.color ="white";
+            if(jk=="LakiLaki")
+            {
+                cJK.style.backgroundColor = "blue";
+            }else
+            {
+                cJK.style.backgroundColor = "red";
+            }
+           
+        }
+
+        function getAge(DOB) {
+            var today = new Date();
+            var birthDate = new Date(DOB);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age = age - 1;
+            }
+
+            return age;
+        }
+    
+</script> 
+</head>
+<body>
+    <table  class="width">
+        <tr>
+            <th>
+                <img src="logo.png" alt="foto" width="200px">
+            </th>
+            <th>
+                <h1>FORM REGISTRASI</h1>
+            </th>
+        </tr>
+    </table>
+    <table  class="width border" border="1">
+        <tr>
+            <th>
+                <table  class="pos">
+                   
+                    <tr>
+                        <td>NIK</td>
+                        <td>:</td>
+                        <td><input type="number" placeholder="masukan NIK" id="nik" value=""></td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text" placeholder="masukan nama" id="nama" value=""></td>
+                        
+                       
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td>Tempat Lahir</td>
+                        <td>:</td>
+                        <td><input type="text" placeholder="tempat lahir" id="tempatLahir" value=""></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td>
+                            <input type="date" id="tanggalLahir" value=""></td>
+                        
+                        
+                
+                    </tr>
+                    <tr>
+                        
+                       
+                        <td> <label>Jenis Kelamin</label>  </td>
+                        <td> <label>:</label>    </td>
+                        <td> <input id="radLaki" type="radio" size="24" name="gender" value="LakiLaki" onclick="isiJK(this.value)"> <label>Laki Laki</label> 
+                            <input id="radPerempuan" type="radio" size="24" value="Perempuan"  onclick="isiJK(this.value)" name="gender"> <label>Perempuan</label>
+                        </td>
+                        
+                       
+                        
+                
+                    </tr>
+                    <tr>
+                        <td>Gol.darah</td>
+                        <td> :</td> 
+                        <td>
+                            <select name="darah" id="golDarah">
+                              <option value="A">A</option>
+                              <option value="B">B</option>
+                              <option value="AB">AB</option>
+                              <option value="O">O</option>
+                            </select> </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td>Alamat</td>
+                        <td>:</td>
+                        <td><input type="text" id="alamat"></td>
+                       
+                        
+                    
+            
+                    </tr>
+                    <tr>
+                        
+                        <td>RT</td>
+                        <td>:</td>
+                        <td><input type="number" id="rt"></td>
+                        
+                        
+                        
+                
+                    </tr>
+                    <tr>
+                        
+                        <td>RW</td>
+                        <td>:</td>
+                        <td><input type="number" id="rw"></td>
+                        
+                        
+                        
+                
+                    </tr>
+                    <tr>
+                        
+                        <td>Kel/Desa</td>
+                        <td>:</td>
+                        <td><input type="text" id="desa"></td>
+                     
+                        
+                        
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td>Kecamatan</td>
+                        <td>:</td>
+                        <td><input type="text" id="kecamatan"></td>
+                        
+                        
+                        
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td>Kota</td>
+                        <td>:</td>
+                        <td class="bot"><input type="text"></td>
+                        
+                        
+                        
+                       
+                    </tr>
+                    <tr>
+                        
+                        <td>Provinsi</td>
+                        <td>:</td>
+                        <td class="bot"><input type="text"></td>
+                        
+                        
+                        
+                       
+                    </tr>
+                    <tr>
+                        
+                        <td> <label>Agama</label>  </td>
+                        <td> <label>:</label>    </td>
+                        <td> <select id="cmbAgama" style="width: 100%;">
+                            <option value="Islam">Islam</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Protestan">Protestan</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Budha">Budha</option>
+                          </select>
+                        </td>
+                       
+                        
+                        
+                        
+            
+                    </tr>
+                    <tr>
+                        
+                        <td>Status Perkawinan</td>
+                        <td>:</td>
+                        <td><input type="radio" id="kawin" name="status" value="Kawin">
+                            <label for="male">Kawin</label><br>
+                            <input type="radio" id="blmkawin" name="status" value="Belum Kawin">
+                            <label for="female">Belum Kawin</label></td>
+                       
+                        
+                    
+                        
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td>Pekerjaan</td>
+                        <td>:</td>
+                        <td><input type="text"></td>
+                        
+                       
+                      
+                    </tr>
+                    <tr>
+                        
+                        <td>Kewarganegaraan</td>
+                        <td>:</td>
+                        <td><input type="text" ></td>
+                        
+                        
+                        
+                   
+                    </tr>
+                    <tr>
+                        
+                        <td>Berlaku Hingga</td>
+                        <td>:</td>
+                        <td class="bot"><input type="date"></td>
+                        
+                        
+                        
+                       
+                    </tr>
+
+                    <tr>
+                        
+                        <td colspan="3"><button  onclick="simpan()" class="bton">SIMPAN</button></td>
+                        
+                        
+                        
+                        
+                       
+                    </tr>
+                </table>
+            </th>
+      
+        
+            <th>
+                <table id="tabel" class="tab2 pos border" border="1">
+                    <tr>
+                        <th>NIK</th>
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                        <th>Usia</th>
+                        <th>Jenis Kelamin</th>
+                        <th>agama</th>
+                                    
+                    </tr>
+                    
+                </table>
+               
+            </th>
+        </tr>
+    </table>
+
+
+
+    <!--  -->
+</body>
+</html>
